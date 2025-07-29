@@ -1,0 +1,230 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  padding-top: 50px;
+background: linear-gradient(135deg, #4d0a0a, #220000);
+
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 25px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form select,
+.form button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  min-width: 160px;
+  background-color: #ffffff;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.form button {
+  background-color: #00aaff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #00c6ff;
+}
+
+.toggleBtn {
+  background-color: #ff8c00 !important;
+  color: #fff !important;
+}
+
+.toggleBtn:hover {
+  background-color: #ffa733 !important;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.movieCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  padding: 16px;
+  border-radius: 14px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.movieCard h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.movieCard p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 6px 0;
+}
+
+.actions,
+.watchlistActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Reusable Button Base */
+.buttonBase {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Specific Buttons */
+.addBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: #28a745;
+  color: white;
+}
+
+.addBtn:hover {
+  background-color: #1e9238;
+}
+
+.deleteBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: #dc3545;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #b52a34;
+}
+
+.watchBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: #00cc66;
+  color: white;
+}
+
+.watchBtn:hover {
+  background-color: #00994d;
+}
+
+.trailerBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: #008cff;
+  color: white;
+}
+
+.trailerBtn:hover {
+  background-color: #005fab;
+}
+
+.logoutBtn {
+  background: rgba(255, 77, 79, 0.12);
+  border: 1px solid rgba(255, 77, 79, 0.3);
+  backdrop-filter: blur(12px);
+  color: #ff4d4f;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 77, 79, 0.2);
+}
+
+.logoutBtn:hover {
+  background: rgba(255, 77, 79, 0.3);
+  color: white;
+  box-shadow: 0 6px 18px rgba(255, 77, 79, 0.4);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+

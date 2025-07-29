@@ -1,0 +1,88 @@
+.container {
+  height: 100vh;
+  overflow: hidden; 
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/movie.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+}
+
+
+.hero {
+  text-align: center;
+  margin-top: 180px;
+  height: 200vh;
+}
+
+.logo {
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btnPrimary {
+  background-color: #ffffff;
+  color: #0d0c0c;
+}
+
+.btnPrimary:hover {
+   background: linear-gradient(135deg, #7a2c1c, #b23a30);
+  color: white;
+}
+
+.btnSecondary {
+  background-color: #fff;
+  color: #000000;
+}
+
+.btnSecondary:hover {
+  background: linear-gradient(135deg, #7a2c1c, #b23a30);
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}

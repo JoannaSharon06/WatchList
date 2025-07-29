@@ -1,0 +1,112 @@
+.container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  font-family: 'Segoe UI', sans-serif;
+  color: #f5f5f5;
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.subheading {
+  font-size: 24px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.input::placeholder {
+  color: #cccccc;
+}
+
+.button {
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #00d26a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00f58c;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.movieCard {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.movieTitle {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.movieDate {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.deleteBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #ff1a1a;
+}
+
