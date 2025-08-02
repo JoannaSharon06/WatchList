@@ -53,7 +53,7 @@ export default function AdminDashboard() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>🎬 Admin Dashboard</h1>
+      <h1 className={styles.heading}>Admin Dashboard</h1>
 
       <form className={styles.form} onSubmit={handleAddMovie}>
         <input
@@ -113,10 +113,10 @@ export default function AdminDashboard() {
           value={movie.trailer_url}
           onChange={(e) => setMovie({ ...movie, trailer_url: e.target.value })}
         />
-        <button type="submit" className={styles.button}>➕ Add Movie</button>
+        <button type="submit" className={styles.button}>Add Movie</button>
       </form>
 
-      <h2 className={styles.subheading}>📃 Movies Added by Admin</h2>
+      <h2 className={styles.subheading}> Movies Added by Admin</h2>
       <ul className={styles.movieList}>
         {adminMovies.length === 0 ? (
           <p>No movies added yet.</p>
@@ -132,7 +132,7 @@ export default function AdminDashboard() {
                 onClick={() => handleDeleteMovie(i)}
                 className={styles.deleteBtn}
               >
-                🗑️ Delete
+               Delete
               </button>
             </li>
           ))
