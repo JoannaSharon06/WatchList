@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './watchlist.module.css';  // ✅ CSS Module import
+import styles from './watchlist.module.css';  
 
 const Watchlist = () => {
   const shows = [
