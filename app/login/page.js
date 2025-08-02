@@ -11,7 +11,6 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // ✅ Admin login check
     if (form.email === 'admin@watchlist.com' && form.password === 'admin123') {
       localStorage.setItem('isAdmin', 'true');
       alert('Admin login successful!');
@@ -19,7 +18,6 @@ export default function Login() {
       return;
     }
 
-    // ✅ Normal user login
     const user = JSON.parse(localStorage.getItem(form.email));
     if (user && user.password === form.password) {
       localStorage.setItem('loggedIn', 'true');
