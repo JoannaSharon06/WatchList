@@ -80,8 +80,8 @@ export default function Dashboard() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-  <h1 className={styles.title}>🎬 Movies Dashboard</h1>
-  <button onClick={handleLogout} className={styles.logoutBtn}>🚪 Logout</button>
+  <h1 className={styles.title}> Movies Dashboard</h1>
+  <button onClick={handleLogout} className={styles.logoutBtn}> Logout</button>
 </div>
 
 
@@ -110,7 +110,7 @@ export default function Dashboard() {
           onClick={() => setViewingWatchlist(!viewingWatchlist)}
           className={styles.toggleBtn}
         >
-          {viewingWatchlist ? '🔍 Discover Movies' : '🎞️ View Watchlist'}
+          {viewingWatchlist ? ' Discover Movies' : 'View Watchlist'}
         </button>
       </form>
 
@@ -138,14 +138,14 @@ export default function Dashboard() {
                     onClick={() => handleDeleteFromWatchlist(movie.id)}
                     className={styles.deleteBtn}
                   >
-                    🗑️ Delete
+                    Delete
                   </button>
                   {movie.trailer_url && (
                     <button
                       onClick={() => window.open(movie.trailer_url, '_blank')}
                       className={styles.trailerBtn}
                     >
-                      ▶️ Watch Trailer
+                     Watch Trailer
                     </button>
                   )}
                 </div>
@@ -155,7 +155,7 @@ export default function Dashboard() {
                     onClick={() => handleAddToWatchlist(movie)}
                     className={styles.addBtn}
                   >
-                    ➕ Add to Watchlist
+                   Add to Watchlist
                   </button>
                 </div>
               )}
